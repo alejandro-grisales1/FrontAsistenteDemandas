@@ -1,0 +1,23 @@
+---
+interface Props {
+  tittle: string;
+}
+
+const { tittle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente de Demandas | {tittle}</title>
+  </head>
+  <body
+    class="min-h-full bg-origin-content bg-gradient-to-b from-fondo from-30% via-fondo1 via-60% to-fondo3 to-95%"
+  >
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
