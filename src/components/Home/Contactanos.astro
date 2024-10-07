@@ -1,0 +1,37 @@
+---
+import Nebulosa from "../../../public/images/nebulosa3.svg";
+---
+
+<section class="w-2/4 h-[600px] m-auto my-10">
+  <img src={Nebulosa.src} alt="" class="absolute -z-10" />
+  <div class="grid grid-cols-3">
+    <div class="col-span-1">
+      <h3 class="text-center font-semibold text-3xl text-white py-16">
+        CONTACTANOS!
+      </h3>
+    </div>
+    <div class="col-span-2 py-16">
+      <form action="" class="flex flex-col gap-6">
+        <input
+          class="border-2 border-black rounded-xl px-6 p-1 h-10"
+          placeholder="NOMBRE COMPLETO"
+          type="text"
+        />
+        <input
+          class="border-2 border-black rounded-xl px-6 p-1 h-10"
+          placeholder="CORREO ELECTRONICO"
+          type="email"
+        />
+        <textarea
+          name=""
+          id=""
+          class="h-44 border-2 border-black rounded-xl px-6 p-1"
+          placeholder="MENSAJE"></textarea>
+        <button
+          class="bg-fondo rounded-xl text-center m-auto mt-8 p-1 px-6 text-white"
+          >ENVIAR</button
+        >
+      </form>
+    </div>
+  </div>
+</section>
