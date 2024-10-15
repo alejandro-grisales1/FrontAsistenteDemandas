@@ -1,0 +1,81 @@
+---
+import imgAnalisis from "../../../public/images/Analisis.svg";
+import imgRecopilacion from "../../../public/images/Recopilacion.svg";
+import imgSoluciones from "../../../public/images/Soluciones.svg";
+---
+
+<section
+    class="flex justify-center items-center h-screen relative gap-8 px-16 py-12 bg-gray-100"
+>
+    <div class="rounded-lg p-6"></div>
+    <div class="flex flex-grow flex-wrap gap-4 justify-center items-center">
+        <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center max-w-sm w-full flex-grow"
+        >
+            <h2 class="text-green-500 text-2xl font-bold mb-4">
+                Análisis de datos
+            </h2>
+            <details>
+                <summary class="text-green-500 font-semibold cursor-pointer">
+                    Leer más
+                </summary>
+                <p class="text-gray-700 leading-relaxed mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fuga, earum repellendus corrupti illo quod impedit tempora
+                    dolor sequi, possimus iure. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Rerum, laborum!
+                </p>
+            </details>
+            <img
+                src={imgAnalisis.src}
+                alt="Análisis de datos"
+                class="mx-auto mt-4"
+            />
+        </div>
+        <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center max-w-sm w-full flex-grow"
+        >
+            <h2 class="text-green-500 text-2xl mb-4">Recopilación de datos</h2>
+            <details>
+                <summary class="text-green-500 font-semibold cursor-pointer">
+                    Leer más
+                </summary>
+                <p class="text-gray-700 leading-relaxed mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fuga, earum repellendus corrupti illo quod impedit tempora
+                    dolor sequi, possimus iure. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Rerum, laborum!
+                </p>
+            </details>
+            <img
+                src={imgRecopilacion.src}
+                alt="Recopilación de datos"
+                class="mx-auto mt-4"
+            />
+        </div>
+        <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center max-w-sm w-full flex-grow"
+        >
+            <h2 class="text-green-500 text-2xl font-bold mb-4">
+                Generar soluciones
+            </h2>
+            <details>
+                <summary class="text-green-500 font-semibold cursor-pointer">
+                    Leer más
+                </summary>
+                <p class="text-gray-700 leading-relaxed mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fuga, earum repellendus corrupti illo quod impedit tempora
+                    dolor sequi, possimus iure. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Rerum, laborum!
+                </p>
+            </details>
+            <img
+                src={imgSoluciones.src}
+                alt="Generar soluciones"
+                class="mx-auto mt-4"
+            />
+        </div>
+    </div>
+    <p class="text-center mt-6"></p>
+</section>
