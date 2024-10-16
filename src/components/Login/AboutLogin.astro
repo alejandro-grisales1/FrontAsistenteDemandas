@@ -1,0 +1,48 @@
+---
+import Logo from "../../../public/images/Frame 19.svg";
+---
+
+<section class="flex justify-center items-center h-screen">
+  <a
+    href="/"
+    class="absolute top-4 left-4 py-2 px-4 text-white bg-verde hover:bg-fondo1 rounded-lg"
+    >Volver al Home
+  </a>
+
+  <div class="bg-fondo3 rounded-lg p-9">
+    <h1 class="text-black font-semibold text-xl text-center">
+      INICIO DE SESIÓN
+    </h1>
+
+    <img src={Logo.src} alt="Logo" class="w-[200px] rounded-3xl mx-auto" />
+
+    <form class="mt-6">
+      <input
+        class="border-2 border-black rounded-xl px-6 py-2 w-full mb-4"
+        placeholder="Usuario"
+        type="text"
+        required
+      /><br />
+
+      <input
+        class="border-2 border-black rounded-xl px-6 py-2 w-full"
+        placeholder="Contraseña"
+        type="password"
+        required
+      />
+      <div class="text-center mb-4">
+        <a href="" class="text-red-500 underline block mb-1"
+          >Olvidé mi contraseña</a
+        >
+      </div>
+      <button
+        class="py-2 px-24 text-white bg-verde hover:bg-fondo1 rounded-lg w-full mb-4"
+        >INICIAR SESIÓN
+      </button>
+      <!-- <button
+        class="py-2 px-11 text-white bg-azulOscuro hover:bg-fondo1 rounded-lg w-full"
+        >REGISTRARSE
+      </button> -->
+    </form>
+  </div>
+</section>
