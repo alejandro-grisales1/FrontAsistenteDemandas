@@ -1,0 +1,20 @@
+---
+import Card from "../components/Avisos/Card.astro"
+import NavBar from "../components/NavBar.astro"
+import Layout from "../layouts/Layout.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<NavBar/>
+<Layout tittle="AvisoLegal">
+      <main class="container mx-auto px-4 py-8 bg-neutral-400">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-8">Aviso Legal</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card title="Privacidad de Datos" content="En nuestra plataforma, nos tomamos muy en serio la protección de tu privacidad. Los datos personales que recolectamos, como nombre, correo electrónico o información de contacto, son utilizados únicamente para los fines especificados al momento de su recopilación, como el envío de notificaciones relevantes o la mejora de nuestros servicios. Bajo ninguna circunstancia compartimos tu información con terceros sin tu consentimiento, salvo que sea requerido por ley. Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos contra accesos no autorizados, pérdida o alteración.Si deseas ejercer tus derechos de acceso, rectificación, cancelación o portabilidad de tus datos, por favor contáctanos a través de nuestro correo oficial. Tu privacidad es nuestra prioridad." />
+          <Card title="Términos y Condiciones" content="Al utilizar nuestra plataforma, aceptas los términos y condiciones aquí expuestos. Nuestra plataforma está diseñada para ofrecerte un espacio seguro y funcional, pero su uso indebido puede resultar en la suspensión o eliminación de tu acceso.Los usuarios se comprometen a proporcionar información veraz y actualizada al registrarse o interactuar con nuestros servicios. Está estrictamente prohibido utilizar la plataforma para actividades ilícitas, fraudulentas o que atenten contra los derechos de otros usuarios o de terceros.Nos reservamos el derecho de actualizar estos términos en cualquier momento para adaptarnos a cambios legales o tecnológicos. Recomendamos revisar esta sección periódicamente para estar al tanto de las condiciones más recientes." />
+          <Card title="Derechos de Autor" content="Todo el contenido disponible en esta plataforma, incluidos textos, imágenes, gráficos, logos, videos y código, está protegido por las leyes de derechos de autor y es propiedad exclusiva de nuestra organización o de los titulares que han otorgado las licencias correspondientes.Está prohibida la reproducción, distribución, comunicación pública o transformación del contenido sin previa autorización por escrito del propietario de los derechos. Cualquier uso no autorizado será considerado una infracción de la ley y estará sujeto a las acciones legales pertinentes.Si detectas que algún contenido infringe tus derechos de autor, te invitamos a comunicarte con nosotros para tomar las medidas necesarias. Respetamos la propiedad intelectual y estamos comprometidos con el cumplimiento de las normativas vigentes." />
+        </div>
+      </main>
+</Layout>
+<Footer/>
