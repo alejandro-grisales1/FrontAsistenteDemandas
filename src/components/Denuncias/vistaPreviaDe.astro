@@ -1,12 +1,23 @@
+---
+import { fetchResource } from "../../utils/api";
 
+let data = []
+
+try {
+  data = await fetchResource();
+} catch (error) {
+  console.error('Error facthcing data',error)
+}
+---
 <body class="bg-gray-100">
   <section class="h-screen relative gap-8 px-16 py-12 bg-gray-100 border-none">
-    <div class="border-b-2 border-black">
-      <h1 class="text-green-500 font-bold text-xl">Titulo de la denuncia</h1>
-      <p>
-        Algunos días del año se interrumpía el tráfico y la industria de Ribamoura. El pueblo entero se congregaba a celebrar las solemnidades consuetudinarias, que servían de pretexto para solaces y holgorio. Tal ocurría con el Carnaval, tal con la fiesta de la Patrona, tal con los días de la Semana Santa. A pesar de ser éstos de penitencia y mortificación, para los de Ribamoura tenían carácter de fiesta; en ellos se celebraba, en la iglesia principal, espacioso edificio de la época herreriana, la representación de la Pasión, con personajes de carne y hueso, y encargándose de los papeles gente del pueblo mismo
-        Las mujeres, vestidas y adornadas con lo que da de sí el contrabando, lucían pendientes de ostentosa filigrana, patenas fastuosas, pañuelos de seda de colorines; en las casas no faltaba ron jamaiqueño ni queso de Flandes, y los hombres poseían armas inglesas, bolsas de piel y tabaco Virginia y Macuba. Al través de Portugal, Inglaterra enviaba sus productos, y de España pasaban otros, cruzando el caudaloso río.
-    </div>
-    </p>
+    {data.map((item)=>(
+      <div class="border-b-2 border-black" key={item.id}>
+        <h2 class="text-green-500 font-bold text-xl">{item.titulo}</h2>
+        <p>
+          {item.descripcion}
+        </p>
+      </div>
+    ))}
   </section>
 </body>
