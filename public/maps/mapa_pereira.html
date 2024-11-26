@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3cdd6022cf4223593f8e6815aa04998c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3cdd6022cf4223593f8e6815aa04998c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3cdd6022cf4223593f8e6815aa04998c = L.map(
+                "map_3cdd6022cf4223593f8e6815aa04998c",
+                {
+                    center: [4.8143, -75.6946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_274609b946d3af53c9cc18120af824b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_274609b946d3af53c9cc18120af824b1.addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var marker_d684821c0cd6f1e99a2c17bfeef2f0bf = L.marker(
+                [4.8143, -75.6946],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_66f12f079c3d743b895bea13f73b81d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d684821c0cd6f1e99a2c17bfeef2f0bf.setIcon(icon_66f12f079c3d743b895bea13f73b81d7);
+        
+    
+        var popup_dedc78f77b82d52b736c1a44d26e0557 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21f46bc57c88a3b591e25440ceafb739 = $(`<div id="html_21f46bc57c88a3b591e25440ceafb739" style="width: 100.0%; height: 100.0%;">Centro de Pereira</div>`)[0];
+                popup_dedc78f77b82d52b736c1a44d26e0557.setContent(html_21f46bc57c88a3b591e25440ceafb739);
+            
+        
+
+        marker_d684821c0cd6f1e99a2c17bfeef2f0bf.bindPopup(popup_dedc78f77b82d52b736c1a44d26e0557)
+        ;
+
+        
+    
+    
+            marker_d684821c0cd6f1e99a2c17bfeef2f0bf.bindTooltip(
+                `<div>
+                     Click aquí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fecd8008fd034c6a1a21c0d6a932d4ce = L.marker(
+                [4.8113211, -75.7376968],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_a254590c2f6a9b18577e122d94c0b621 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fecd8008fd034c6a1a21c0d6a932d4ce.setIcon(icon_a254590c2f6a9b18577e122d94c0b621);
+        
+    
+        var popup_ce6a2ddf69c1f57274abe0284810fef6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e733c8c1e1dfdaa544c6bae12e47ba = $(`<div id="html_d0e733c8c1e1dfdaa544c6bae12e47ba" style="width: 100.0%; height: 100.0%;">Avenida 30 de Agosto No 68 - 125 Barrio Caï¿½averal</div>`)[0];
+                popup_ce6a2ddf69c1f57274abe0284810fef6.setContent(html_d0e733c8c1e1dfdaa544c6bae12e47ba);
+            
+        
+
+        marker_fecd8008fd034c6a1a21c0d6a932d4ce.bindPopup(popup_ce6a2ddf69c1f57274abe0284810fef6)
+        ;
+
+        
+    
+    
+            var marker_07483764843401a243516e48edd48c95 = L.marker(
+                [4.8040077, -75.7381134],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_7596f1e5dcfc7361df78242c34625e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07483764843401a243516e48edd48c95.setIcon(icon_7596f1e5dcfc7361df78242c34625e31);
+        
+    
+        var popup_ede803aa79ce98b526042ac501815d37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4062b105f1ccb5bef05aef997147607 = $(`<div id="html_f4062b105f1ccb5bef05aef997147607" style="width: 100.0%; height: 100.0%;">Calle 71 No 26 - 57 Barrio Cuba</div>`)[0];
+                popup_ede803aa79ce98b526042ac501815d37.setContent(html_f4062b105f1ccb5bef05aef997147607);
+            
+        
+
+        marker_07483764843401a243516e48edd48c95.bindPopup(popup_ede803aa79ce98b526042ac501815d37)
+        ;
+
+        
+    
+    
+            var marker_bbf9261ff42d859c39ee75f2b0087614 = L.marker(
+                [4.8074584, -75.7219719],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_cbcbffd33a91cd6ad3e57aa35b66e46a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbf9261ff42d859c39ee75f2b0087614.setIcon(icon_cbcbffd33a91cd6ad3e57aa35b66e46a);
+        
+    
+        var popup_5abf50e291bdc764d1c006398a0fe4cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6207c6957653c23dc896556e9a661494 = $(`<div id="html_6207c6957653c23dc896556e9a661494" style="width: 100.0%; height: 100.0%;">Avenida Las Amï¿½ricas No 53 - 20 Barrio Avenida Sur</div>`)[0];
+                popup_5abf50e291bdc764d1c006398a0fe4cf.setContent(html_6207c6957653c23dc896556e9a661494);
+            
+        
+
+        marker_bbf9261ff42d859c39ee75f2b0087614.bindPopup(popup_5abf50e291bdc764d1c006398a0fe4cf)
+        ;
+
+        
+    
+    
+            var marker_809e0d4cd07649bf9cefb135181e5217 = L.marker(
+                [4.814188, -75.7145575],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_8405dad5340e96e1db3045cf90dc5f36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_809e0d4cd07649bf9cefb135181e5217.setIcon(icon_8405dad5340e96e1db3045cf90dc5f36);
+        
+    
+        var popup_7bed844ce9d4d60694d0fd72ee089d8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfd65e0194e7546ff3699e49a6087914 = $(`<div id="html_bfd65e0194e7546ff3699e49a6087914" style="width: 100.0%; height: 100.0%;">Avenida 30 de Agosto No 42 - 75 Barrio Maraya</div>`)[0];
+                popup_7bed844ce9d4d60694d0fd72ee089d8f.setContent(html_bfd65e0194e7546ff3699e49a6087914);
+            
+        
+
+        marker_809e0d4cd07649bf9cefb135181e5217.bindPopup(popup_7bed844ce9d4d60694d0fd72ee089d8f)
+        ;
+
+        
+    
+    
+            var marker_08f8135af5ced229d7624c6fc35b93cc = L.marker(
+                [4.8144447, -75.7037967],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_86f0b12259268336c198779a1f940e1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08f8135af5ced229d7624c6fc35b93cc.setIcon(icon_86f0b12259268336c198779a1f940e1e);
+        
+    
+        var popup_77bfa403dfa4987c954490e5fdde58a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7da75a20bedb08c67b43b127b89d37 = $(`<div id="html_0f7da75a20bedb08c67b43b127b89d37" style="width: 100.0%; height: 100.0%;">Carrera 8 Bis No 30 B - 49 Barrio Centro</div>`)[0];
+                popup_77bfa403dfa4987c954490e5fdde58a0.setContent(html_0f7da75a20bedb08c67b43b127b89d37);
+            
+        
+
+        marker_08f8135af5ced229d7624c6fc35b93cc.bindPopup(popup_77bfa403dfa4987c954490e5fdde58a0)
+        ;
+
+        
+    
+    
+            var marker_b52ed4fee147cb552bcfef5597dba418 = L.marker(
+                [4.811647499999999, -75.7041411],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_833b00befd3495fec63c922cf2abde66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b52ed4fee147cb552bcfef5597dba418.setIcon(icon_833b00befd3495fec63c922cf2abde66);
+        
+    
+        var popup_698525ec28a12fd8849c6a2e226a912d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8925d3d33e33535a451aa4f335689f56 = $(`<div id="html_8925d3d33e33535a451aa4f335689f56" style="width: 100.0%; height: 100.0%;">Avenida 30 de Agosto No 30 - 30 Local 27 Barrio Repuestos</div>`)[0];
+                popup_698525ec28a12fd8849c6a2e226a912d.setContent(html_8925d3d33e33535a451aa4f335689f56);
+            
+        
+
+        marker_b52ed4fee147cb552bcfef5597dba418.bindPopup(popup_698525ec28a12fd8849c6a2e226a912d)
+        ;
+
+        
+    
+    
+            var marker_ae284ccb24cdaf637dc7e35e6ab0735b = L.marker(
+                [4.8087174, -75.690601],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_16a1fbc9a8fdd9e4f258a80ee332d1b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae284ccb24cdaf637dc7e35e6ab0735b.setIcon(icon_16a1fbc9a8fdd9e4f258a80ee332d1b4);
+        
+    
+        var popup_5c419919be128335648e40926e058c6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe9daf47b8d7ccd74a83a7539f40a79b = $(`<div id="html_fe9daf47b8d7ccd74a83a7539f40a79b" style="width: 100.0%; height: 100.0%;">Carrera 7 No 25 - 18 Barrio Centro</div>`)[0];
+                popup_5c419919be128335648e40926e058c6b.setContent(html_fe9daf47b8d7ccd74a83a7539f40a79b);
+            
+        
+
+        marker_ae284ccb24cdaf637dc7e35e6ab0735b.bindPopup(popup_5c419919be128335648e40926e058c6b)
+        ;
+
+        
+    
+    
+            var marker_f7294dbeeac48a1327a6495465fa81cb = L.marker(
+                [4.813117099999999, -75.6962377],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_33c983689b0e060f7a1a82388a1b2df6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7294dbeeac48a1327a6495465fa81cb.setIcon(icon_33c983689b0e060f7a1a82388a1b2df6);
+        
+    
+        var popup_18d359caeec750d660bba107028862bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fe194e7beb52d9dd61670903f5f1923 = $(`<div id="html_8fe194e7beb52d9dd61670903f5f1923" style="width: 100.0%; height: 100.0%;">Carrera 9 No 21 - 03 Barrio Centro</div>`)[0];
+                popup_18d359caeec750d660bba107028862bb.setContent(html_8fe194e7beb52d9dd61670903f5f1923);
+            
+        
+
+        marker_f7294dbeeac48a1327a6495465fa81cb.bindPopup(popup_18d359caeec750d660bba107028862bb)
+        ;
+
+        
+    
+    
+            var marker_d0c9fc4b784eb10dc1033a0b6481769d = L.marker(
+                [4.8126118, -75.69245430000001],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_da7045b00afd89b0145ee6cab41cc91e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0c9fc4b784eb10dc1033a0b6481769d.setIcon(icon_da7045b00afd89b0145ee6cab41cc91e);
+        
+    
+        var popup_830c76a0929af536c514207d138504f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5545c9565e9d0e82b6bbb165b0dad7b = $(`<div id="html_a5545c9565e9d0e82b6bbb165b0dad7b" style="width: 100.0%; height: 100.0%;">Carrera 10 No 16 - 60 Barrio C. Cultural Lucy Tejeda</div>`)[0];
+                popup_830c76a0929af536c514207d138504f2.setContent(html_a5545c9565e9d0e82b6bbb165b0dad7b);
+            
+        
+
+        marker_d0c9fc4b784eb10dc1033a0b6481769d.bindPopup(popup_830c76a0929af536c514207d138504f2)
+        ;
+
+        
+    
+    
+            var marker_4a43d4569f30810295450c485e16e730 = L.marker(
+                [4.8085346, -75.6874536],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_8c9227861e96154d4f8d88d50b19b4ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a43d4569f30810295450c485e16e730.setIcon(icon_8c9227861e96154d4f8d88d50b19b4ea);
+        
+    
+        var popup_4c2cd7ee4bb7d77aaaeada66182a33c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b79486882a298a4f6917fb6c1e451508 = $(`<div id="html_b79486882a298a4f6917fb6c1e451508" style="width: 100.0%; height: 100.0%;">Avenida Circunvalar No 10 - 26 Barrio Circunvalar</div>`)[0];
+                popup_4c2cd7ee4bb7d77aaaeada66182a33c7.setContent(html_b79486882a298a4f6917fb6c1e451508);
+            
+        
+
+        marker_4a43d4569f30810295450c485e16e730.bindPopup(popup_4c2cd7ee4bb7d77aaaeada66182a33c7)
+        ;
+
+        
+    
+    
+            var marker_61b1d1b38ba34c3efc50d8c594a5e67f = L.marker(
+                [4.8087174, -75.690601],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_214f0b43f382fbaede908162cef6f18c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61b1d1b38ba34c3efc50d8c594a5e67f.setIcon(icon_214f0b43f382fbaede908162cef6f18c);
+        
+    
+        var popup_27a1cb44941548671967dab66e9cd7e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc0a124861f725c246fa5ce6f9536335 = $(`<div id="html_cc0a124861f725c246fa5ce6f9536335" style="width: 100.0%; height: 100.0%;">Calle 16 No 6 - 34 Barrio Centro</div>`)[0];
+                popup_27a1cb44941548671967dab66e9cd7e9.setContent(html_cc0a124861f725c246fa5ce6f9536335);
+            
+        
+
+        marker_61b1d1b38ba34c3efc50d8c594a5e67f.bindPopup(popup_27a1cb44941548671967dab66e9cd7e9)
+        ;
+
+        
+    
+    
+            var marker_14c5016e1b68919ffe050cfe83ea097e = L.marker(
+                [4.808787199999999, -75.70594439999999],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_2e2ff66d2505791dbbb4a46b6b7eb1ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14c5016e1b68919ffe050cfe83ea097e.setIcon(icon_2e2ff66d2505791dbbb4a46b6b7eb1ac);
+        
+    
+        var popup_8faddd7d8e870ac2b6033a6e0805c063 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_219084befab85fe2a05761f837c63276 = $(`<div id="html_219084befab85fe2a05761f837c63276" style="width: 100.0%; height: 100.0%;">Carrera 15A No 148 - 37 Barrio La Julita</div>`)[0];
+                popup_8faddd7d8e870ac2b6033a6e0805c063.setContent(html_219084befab85fe2a05761f837c63276);
+            
+        
+
+        marker_14c5016e1b68919ffe050cfe83ea097e.bindPopup(popup_8faddd7d8e870ac2b6033a6e0805c063)
+        ;
+
+        
+    
+    
+            var marker_41c1112bcbc5fe6c86a9ae5b02c3e884 = L.marker(
+                [3.4558256, -76.5228101],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_a57b5cbeabcb056f8faf2470263a7122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41c1112bcbc5fe6c86a9ae5b02c3e884.setIcon(icon_a57b5cbeabcb056f8faf2470263a7122);
+        
+    
+        var popup_c3ae633ff15af6384596a01ae0363f43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d44eb2bbab371a7f012a165616ce89b = $(`<div id="html_6d44eb2bbab371a7f012a165616ce89b" style="width: 100.0%; height: 100.0%;">Carrera 5 No 16 - 63 Barrio San Nicolï¿½s</div>`)[0];
+                popup_c3ae633ff15af6384596a01ae0363f43.setContent(html_6d44eb2bbab371a7f012a165616ce89b);
+            
+        
+
+        marker_41c1112bcbc5fe6c86a9ae5b02c3e884.bindPopup(popup_c3ae633ff15af6384596a01ae0363f43)
+        ;
+
+        
+    
+    
+            var marker_8afb139979c7d24965725f61d8d0df25 = L.marker(
+                [4.805948, -75.737538],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_c43691d3753121afe0658c879447e629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8afb139979c7d24965725f61d8d0df25.setIcon(icon_c43691d3753121afe0658c879447e629);
+        
+    
+        var popup_3dcc0cde440fa26816b5d2d0cab627be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37bd294015d557a4841727cda5a615ce = $(`<div id="html_37bd294015d557a4841727cda5a615ce" style="width: 100.0%; height: 100.0%;">Calle 69 No 25 - 08 Barrio Cuba</div>`)[0];
+                popup_3dcc0cde440fa26816b5d2d0cab627be.setContent(html_37bd294015d557a4841727cda5a615ce);
+            
+        
+
+        marker_8afb139979c7d24965725f61d8d0df25.bindPopup(popup_3dcc0cde440fa26816b5d2d0cab627be)
+        ;
+
+        
+    
+    
+            var marker_d01206f50af71ec41b96f57ed402f322 = L.marker(
+                [4.8006378, -75.7123345],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_16e0b52e9eebe5e7551419bdcd23a9be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d01206f50af71ec41b96f57ed402f322.setIcon(icon_16e0b52e9eebe5e7551419bdcd23a9be);
+        
+    
+        var popup_38327de486e000fd4eda8b43b71a8c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b0c05e8c63d1918ac0cdd0c82ef83fe = $(`<div id="html_7b0c05e8c63d1918ac0cdd0c82ef83fe" style="width: 100.0%; height: 100.0%;">Carrera 2 No 23 - 29 Barrio San Joaquï¿½n</div>`)[0];
+                popup_38327de486e000fd4eda8b43b71a8c7c.setContent(html_7b0c05e8c63d1918ac0cdd0c82ef83fe);
+            
+        
+
+        marker_d01206f50af71ec41b96f57ed402f322.bindPopup(popup_38327de486e000fd4eda8b43b71a8c7c)
+        ;
+
+        
+    
+    
+            var marker_3bccc64dde3aa0005681ba700ae18119 = L.marker(
+                [4.8090958, -75.6914613],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_415131ac5ba25643278e3d3cc1c8ee14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bccc64dde3aa0005681ba700ae18119.setIcon(icon_415131ac5ba25643278e3d3cc1c8ee14);
+        
+    
+        var popup_726073b46b342d43ba038a4ae43a7b7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbb9b77862a1a22b9b89761e443c8354 = $(`<div id="html_cbb9b77862a1a22b9b89761e443c8354" style="width: 100.0%; height: 100.0%;">Carrera 13 No 15 - 35 Barrio El Centro</div>`)[0];
+                popup_726073b46b342d43ba038a4ae43a7b7f.setContent(html_cbb9b77862a1a22b9b89761e443c8354);
+            
+        
+
+        marker_3bccc64dde3aa0005681ba700ae18119.bindPopup(popup_726073b46b342d43ba038a4ae43a7b7f)
+        ;
+
+        
+    
+    
+            var marker_7ae659dff2a25c769a38e2064cbd6406 = L.marker(
+                [4.8046261, -75.6855345],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_1660dc4b7650ae1a9f7cf328ec243642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ae659dff2a25c769a38e2064cbd6406.setIcon(icon_1660dc4b7650ae1a9f7cf328ec243642);
+        
+    
+        var popup_9b11516e73c77747b76c317a86d78181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08580c556f99637815977edf33df1cdd = $(`<div id="html_08580c556f99637815977edf33df1cdd" style="width: 100.0%; height: 100.0%;">Calle 21 No 4 - 23 Barrio Pinares</div>`)[0];
+                popup_9b11516e73c77747b76c317a86d78181.setContent(html_08580c556f99637815977edf33df1cdd);
+            
+        
+
+        marker_7ae659dff2a25c769a38e2064cbd6406.bindPopup(popup_9b11516e73c77747b76c317a86d78181)
+        ;
+
+        
+    
+    
+            var marker_6b322a43ddfa8f557f93094851b7e17d = L.marker(
+                [4.8353868, -75.66676290000001],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_6907eab23a0d7b7b4b2ec5a2f34f053e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b322a43ddfa8f557f93094851b7e17d.setIcon(icon_6907eab23a0d7b7b4b2ec5a2f34f053e);
+        
+    
+        var popup_43568bd86470c046ffa1a65e444987f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a32805a843cff6e539f8a23a8651978 = $(`<div id="html_9a32805a843cff6e539f8a23a8651978" style="width: 100.0%; height: 100.0%;">Carrera 3 No 16 - 54 Barrio San Fernando</div>`)[0];
+                popup_43568bd86470c046ffa1a65e444987f3.setContent(html_9a32805a843cff6e539f8a23a8651978);
+            
+        
+
+        marker_6b322a43ddfa8f557f93094851b7e17d.bindPopup(popup_43568bd86470c046ffa1a65e444987f3)
+        ;
+
+        
+    
+    
+            var marker_6829e41c6596078b3d59709593ae18ff = L.marker(
+                [4.7971199, -75.69064999999999],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_13001b0792338a9cb3fe2a5179994e55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6829e41c6596078b3d59709593ae18ff.setIcon(icon_13001b0792338a9cb3fe2a5179994e55);
+        
+    
+        var popup_7c1aa4e0fbe1b37f18b35898a6f17741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7dd5c53da6dbd855323fee93936fb44 = $(`<div id="html_b7dd5c53da6dbd855323fee93936fb44" style="width: 100.0%; height: 100.0%;">Calle 50 No 20 - 05 Barrio ï¿½lamos</div>`)[0];
+                popup_7c1aa4e0fbe1b37f18b35898a6f17741.setContent(html_b7dd5c53da6dbd855323fee93936fb44);
+            
+        
+
+        marker_6829e41c6596078b3d59709593ae18ff.bindPopup(popup_7c1aa4e0fbe1b37f18b35898a6f17741)
+        ;
+
+        
+    
+    
+            var marker_6d5eb1ae7fdf8d2f578075c16f7bf7da = L.marker(
+                [4.8158436, -75.6977915],
+                {}
+            ).addTo(map_3cdd6022cf4223593f8e6815aa04998c);
+        
+    
+            var icon_4faf3d6bc94d8b874783c4ec36bac2ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d5eb1ae7fdf8d2f578075c16f7bf7da.setIcon(icon_4faf3d6bc94d8b874783c4ec36bac2ea);
+        
+    
+        var popup_8f3fcc758eb865a4d848c7328af0aa51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f969f841d906982bbc1c69576d8e234 = $(`<div id="html_8f969f841d906982bbc1c69576d8e234" style="width: 100.0%; height: 100.0%;">Carrera 6 No 23 - 33 Barrio Corales</div>`)[0];
+                popup_8f3fcc758eb865a4d848c7328af0aa51.setContent(html_8f969f841d906982bbc1c69576d8e234);
+            
+        
+
+        marker_6d5eb1ae7fdf8d2f578075c16f7bf7da.bindPopup(popup_8f3fcc758eb865a4d848c7328af0aa51)
+        ;
+
+        
+    
+</script>
+</html>
